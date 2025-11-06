@@ -1,0 +1,26 @@
+; Include chain topologies
+
+#include "charmm36.ff/forcefield.itp"
+#include "kjii.prm"
+#include "kjii.itp"
+
+; Include lipid restraints
+#ifdef POSRES_LIPID
+#include "PIM2_posre.itp"
+#endif
+
+; Include water topology
+#include "charmm36.ff/tip4p.itp"
+
+; Include ion topologies
+#include "charmm36.ff/ions.itp"
+
+[ system ]
+; Name
+PIM2      ;frame t= 1.000 in water
+
+[ molecules ]
+; Compound        #mols
+KJII 128
+SOL         5774
+NA               128
