@@ -10,7 +10,7 @@
 #endif
 
 ; Include water topology
-#include "charmm36.ff/tip3p.itp"
+#include "charmm36.ff/tip4p.itp"
 
 ; Include ion topologies
 #include "charmm36.ff/ions.itp"
